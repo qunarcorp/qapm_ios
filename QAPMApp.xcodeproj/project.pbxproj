@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6008153421FEAEDC00C90D84 /* QAPMSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6008153221FEAEDC00C90D84 /* QAPMSystemInfo.h */; };
+		6008153621FEAEDC00C90D84 /* QAPMSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6008153321FEAEDC00C90D84 /* QAPMSystemInfo.m */; };
+		601244EC21CA67B800D0D21F /* QCacheStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 601244EA21CA67B800D0D21F /* QCacheStorage.h */; };
+		601244ED21CA67B800D0D21F /* QCacheStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 601244EB21CA67B800D0D21F /* QCacheStorage.m */; };
+		6026AF2C222921C2009879F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026AF2B222921C2009879F1 /* AppDelegate.m */; };
+		6026AF2F222922DE009879F1 /* QAPMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026AF2E222922DE009879F1 /* QAPMViewController.m */; };
+		6026AF3122292961009879F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6026AF3022292961009879F1 /* README.md */; };
+		6026AF36222931EF009879F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6026AF35222931EF009879F1 /* SystemConfiguration.framework */; };
+		6026AF3922294532009879F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026AF3822294532009879F1 /* Reachability.m */; };
+		60336C5321E3260900704164 /* QAPFPSMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 60336C5121E3260900704164 /* QAPFPSMonitor.h */; };
+		60336C5521E3260900704164 /* QAPFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 60336C5221E3260900704164 /* QAPFPSMonitor.m */; };
+		607F62E021AF8A7E00289A78 /* QAPMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F62DE21AF8A7E00289A78 /* QAPMonitor.m */; };
+		607F62E121AF8A7E00289A78 /* QAPMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 607F62DF21AF8A7E00289A78 /* QAPMonitor.h */; };
+		6094049521A53948005ADDF6 /* QAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6094049421A53948005ADDF6 /* QAPManager.m */; };
+		609404B221A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 609404A021A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.m */; };
+		609404B321A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 609404A221A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.m */; };
+		609404B421A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 609404A321A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.m */; };
+		609404B521A54476005ADDF6 /* NSURLSession+QunarAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 609404A621A54476005ADDF6 /* NSURLSession+QunarAPM.m */; };
+		609404B621A54476005ADDF6 /* NSURLConnection+QunarAPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 609404A721A54476005ADDF6 /* NSURLConnection+QunarAPM.m */; };
+		609404B721A54476005ADDF6 /* QAPMNetworkEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 609404A921A54476005ADDF6 /* QAPMNetworkEntry.m */; };
+		609404C421A58A61005ADDF6 /* QAPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6094049321A53948005ADDF6 /* QAPManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60A7F1D721A52D5D00D7D1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A7F1D621A52D5D00D7D1CC /* Assets.xcassets */; };
+		60A7F1DD21A52D5E00D7D1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A7F1DC21A52D5E00D7D1CC /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6026AF322229312C009879F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60A7F1C221A52D5B00D7D1CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6094048721A52E53005ADDF6;
+			remoteInfo = QAPM_a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6094048621A52E53005ADDF6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6008153221FEAEDC00C90D84 /* QAPMSystemInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAPMSystemInfo.h; sourceTree = "<group>"; };
+		6008153321FEAEDC00C90D84 /* QAPMSystemInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAPMSystemInfo.m; sourceTree = "<group>"; };
+		601244EA21CA67B800D0D21F /* QCacheStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCacheStorage.h; sourceTree = "<group>"; };
+		601244EB21CA67B800D0D21F /* QCacheStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCacheStorage.m; sourceTree = "<group>"; };
+		6026AF2A222921C2009879F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6026AF2B222921C2009879F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6026AF2D222922DE009879F1 /* QAPMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAPMViewController.h; sourceTree = "<group>"; };
+		6026AF2E222922DE009879F1 /* QAPMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAPMViewController.m; sourceTree = "<group>"; };
+		6026AF3022292961009879F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		6026AF35222931EF009879F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6026AF3822294532009879F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		60336C5121E3260900704164 /* QAPFPSMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAPFPSMonitor.h; sourceTree = "<group>"; };
+		60336C5221E3260900704164 /* QAPFPSMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAPFPSMonitor.m; sourceTree = "<group>"; };
+		607F62DE21AF8A7E00289A78 /* QAPMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAPMonitor.m; sourceTree = "<group>"; };
+		607F62DF21AF8A7E00289A78 /* QAPMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAPMonitor.h; sourceTree = "<group>"; };
+		6094048821A52E53005ADDF6 /* libQAPM_a.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQAPM_a.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6094049321A53948005ADDF6 /* QAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAPManager.h; sourceTree = "<group>"; usesTabs = 0; };
+		6094049421A53948005ADDF6 /* QAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAPManager.m; sourceTree = "<group>"; };
+		6094049F21A54476005ADDF6 /* NSURLSession+QunarAPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+QunarAPM.h"; sourceTree = "<group>"; };
+		609404A021A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAPMNSURLSessionTaskAgent.m; sourceTree = "<group>"; };
+		609404A121A54476005ADDF6 /* NSURLConnection+QunarAPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+QunarAPM.h"; sourceTree = "<group>"; };
+		609404A221A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAPMNSURLSessionDelegateAgent.m; sourceTree = "<group>"; };
+		609404A321A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAPMURLConnectionDelegateAgent.m; sourceTree = "<group>"; };
+		609404A421A54476005ADDF6 /* QAPMNetworkEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAPMNetworkEntry.h; sourceTree = "<group>"; };
+		609404A521A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAPMNSURLSessionTaskAgent.h; sourceTree = "<group>"; };
+		609404A621A54476005ADDF6 /* NSURLSession+QunarAPM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+QunarAPM.m"; sourceTree = "<group>"; };
+		609404A721A54476005ADDF6 /* NSURLConnection+QunarAPM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+QunarAPM.m"; sourceTree = "<group>"; };
+		609404A821A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAPMNSURLSessionDelegateAgent.h; sourceTree = "<group>"; };
+		609404A921A54476005ADDF6 /* QAPMNetworkEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAPMNetworkEntry.m; sourceTree = "<group>"; };
+		609404AA21A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAPMURLConnectionDelegateAgent.h; sourceTree = "<group>"; };
+		609404C221A581D4005ADDF6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		60A7F1CA21A52D5B00D7D1CC /* QAPMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QAPMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A7F1D621A52D5D00D7D1CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60A7F1DB21A52D5E00D7D1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A7F1DC21A52D5E00D7D1CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6094048521A52E53005ADDF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A7F1C721A52D5B00D7D1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6026AF36222931EF009879F1 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6008153121FEAEA900C90D84 /* SystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6008153221FEAEDC00C90D84 /* QAPMSystemInfo.h */,
+				6008153321FEAEDC00C90D84 /* QAPMSystemInfo.m */,
+			);
+			path = SystemInfo;
+			sourceTree = "<group>";
+		};
+		601244E921CA649A00D0D21F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				601244EA21CA67B800D0D21F /* QCacheStorage.h */,
+				601244EB21CA67B800D0D21F /* QCacheStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		6026AF34222931EE009879F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6026AF35222931EF009879F1 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60336C5021E3244400704164 /* FPSMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				60336C5121E3260900704164 /* QAPFPSMonitor.h */,
+				60336C5221E3260900704164 /* QAPFPSMonitor.m */,
+			);
+			path = FPSMonitor;
+			sourceTree = "<group>";
+		};
+		6094048921A52E54005ADDF6 /* QAPM */ = {
+			isa = PBXGroup;
+			children = (
+				6094049321A53948005ADDF6 /* QAPManager.h */,
+				6094049421A53948005ADDF6 /* QAPManager.m */,
+				6094049621A54476005ADDF6 /* Monitor */,
+				601244E921CA649A00D0D21F /* Storage */,
+			);
+			path = QAPM;
+			sourceTree = "<group>";
+		};
+		6094049621A54476005ADDF6 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				607F62DF21AF8A7E00289A78 /* QAPMonitor.h */,
+				607F62DE21AF8A7E00289A78 /* QAPMonitor.m */,
+				609404C221A581D4005ADDF6 /* Reachability.h */,
+				6026AF3822294532009879F1 /* Reachability.m */,
+				6008153121FEAEA900C90D84 /* SystemInfo */,
+				60336C5021E3244400704164 /* FPSMonitor */,
+				6094049E21A54476005ADDF6 /* URLConnection */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		6094049E21A54476005ADDF6 /* URLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				609404A421A54476005ADDF6 /* QAPMNetworkEntry.h */,
+				609404A921A54476005ADDF6 /* QAPMNetworkEntry.m */,
+				6094049F21A54476005ADDF6 /* NSURLSession+QunarAPM.h */,
+				609404A621A54476005ADDF6 /* NSURLSession+QunarAPM.m */,
+				609404A521A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.h */,
+				609404A021A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.m */,
+				609404A821A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.h */,
+				609404A221A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.m */,
+				609404A121A54476005ADDF6 /* NSURLConnection+QunarAPM.h */,
+				609404A721A54476005ADDF6 /* NSURLConnection+QunarAPM.m */,
+				609404AA21A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.h */,
+				609404A321A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.m */,
+			);
+			path = URLConnection;
+			sourceTree = "<group>";
+		};
+		60A7F1C121A52D5B00D7D1CC = {
+			isa = PBXGroup;
+			children = (
+				6094048921A52E54005ADDF6 /* QAPM */,
+				60A7F1CC21A52D5B00D7D1CC /* QAPMApp */,
+				60A7F1CB21A52D5B00D7D1CC /* Products */,
+				6026AF34222931EE009879F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60A7F1CB21A52D5B00D7D1CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60A7F1CA21A52D5B00D7D1CC /* QAPMApp.app */,
+				6094048821A52E53005ADDF6 /* libQAPM_a.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60A7F1CC21A52D5B00D7D1CC /* QAPMApp */ = {
+			isa = PBXGroup;
+			children = (
+				6026AF2A222921C2009879F1 /* AppDelegate.h */,
+				6026AF2B222921C2009879F1 /* AppDelegate.m */,
+				6026AF2D222922DE009879F1 /* QAPMViewController.h */,
+				6026AF2E222922DE009879F1 /* QAPMViewController.m */,
+				60A7F1D621A52D5D00D7D1CC /* Assets.xcassets */,
+				60A7F1DB21A52D5E00D7D1CC /* Info.plist */,
+				60A7F1DC21A52D5E00D7D1CC /* main.m */,
+				6026AF3022292961009879F1 /* README.md */,
+			);
+			path = QAPMApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		609404C321A58A12005ADDF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607F62E121AF8A7E00289A78 /* QAPMonitor.h in Headers */,
+				601244EC21CA67B800D0D21F /* QCacheStorage.h in Headers */,
+				609404C421A58A61005ADDF6 /* QAPManager.h in Headers */,
+				6008153421FEAEDC00C90D84 /* QAPMSystemInfo.h in Headers */,
+				60336C5321E3260900704164 /* QAPFPSMonitor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6094048721A52E53005ADDF6 /* QAPM_a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6094048E21A52E54005ADDF6 /* Build configuration list for PBXNativeTarget "QAPM_a" */;
+			buildPhases = (
+				609404C321A58A12005ADDF6 /* Headers */,
+				6094048421A52E53005ADDF6 /* Sources */,
+				6094048521A52E53005ADDF6 /* Frameworks */,
+				6094048621A52E53005ADDF6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QAPM_a;
+			productName = QAPM_a;
+			productReference = 6094048821A52E53005ADDF6 /* libQAPM_a.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		60A7F1C921A52D5B00D7D1CC /* QAPMApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A7F1E021A52D5E00D7D1CC /* Build configuration list for PBXNativeTarget "QAPMApp" */;
+			buildPhases = (
+				60A7F1C621A52D5B00D7D1CC /* Sources */,
+				60A7F1C721A52D5B00D7D1CC /* Frameworks */,
+				60A7F1C821A52D5B00D7D1CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6026AF332229312C009879F1 /* PBXTargetDependency */,
+			);
+			name = QAPMApp;
+			productName = QAPMApp;
+			productReference = 60A7F1CA21A52D5B00D7D1CC /* QAPMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60A7F1C221A52D5B00D7D1CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mdd;
+				TargetAttributes = {
+					6094048721A52E53005ADDF6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					60A7F1C921A52D5B00D7D1CC = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 60A7F1C521A52D5B00D7D1CC /* Build configuration list for PBXProject "QAPMApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60A7F1C121A52D5B00D7D1CC;
+			productRefGroup = 60A7F1CB21A52D5B00D7D1CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60A7F1C921A52D5B00D7D1CC /* QAPMApp */,
+				6094048721A52E53005ADDF6 /* QAPM_a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60A7F1C821A52D5B00D7D1CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6026AF3122292961009879F1 /* README.md in Resources */,
+				60A7F1D721A52D5D00D7D1CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6094048421A52E53005ADDF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607F62E021AF8A7E00289A78 /* QAPMonitor.m in Sources */,
+				609404B321A54476005ADDF6 /* QAPMNSURLSessionDelegateAgent.m in Sources */,
+				601244ED21CA67B800D0D21F /* QCacheStorage.m in Sources */,
+				609404B621A54476005ADDF6 /* NSURLConnection+QunarAPM.m in Sources */,
+				609404B521A54476005ADDF6 /* NSURLSession+QunarAPM.m in Sources */,
+				6094049521A53948005ADDF6 /* QAPManager.m in Sources */,
+				60336C5521E3260900704164 /* QAPFPSMonitor.m in Sources */,
+				6008153621FEAEDC00C90D84 /* QAPMSystemInfo.m in Sources */,
+				609404B421A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.m in Sources */,
+				609404B721A54476005ADDF6 /* QAPMNetworkEntry.m in Sources */,
+				6026AF3922294532009879F1 /* Reachability.m in Sources */,
+				609404B221A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A7F1C621A52D5B00D7D1CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6026AF2F222922DE009879F1 /* QAPMViewController.m in Sources */,
+				6026AF2C222921C2009879F1 /* AppDelegate.m in Sources */,
+				60A7F1DD21A52D5E00D7D1CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6026AF332229312C009879F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6094048721A52E53005ADDF6 /* QAPM_a */;
+			targetProxy = 6026AF322229312C009879F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6094048F21A52E54005ADDF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6094049021A52E54005ADDF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60A7F1DE21A52D5E00D7D1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		60A7F1DF21A52D5E00D7D1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60A7F1E121A52D5E00D7D1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBEDVG2TLC;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = QAPMApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"QAPM_a\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Qunar.QAPMApp.mdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60A7F1E221A52D5E00D7D1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBEDVG2TLC;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = QAPMApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"QAPM_a\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Qunar.QAPMApp.mdd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6094048E21A52E54005ADDF6 /* Build configuration list for PBXNativeTarget "QAPM_a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6094048F21A52E54005ADDF6 /* Debug */,
+				6094049021A52E54005ADDF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60A7F1C521A52D5B00D7D1CC /* Build configuration list for PBXProject "QAPMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A7F1DE21A52D5E00D7D1CC /* Debug */,
+				60A7F1DF21A52D5E00D7D1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60A7F1E021A52D5E00D7D1CC /* Build configuration list for PBXNativeTarget "QAPMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A7F1E121A52D5E00D7D1CC /* Debug */,
+				60A7F1E221A52D5E00D7D1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60A7F1C221A52D5B00D7D1CC /* Project object */;
+}

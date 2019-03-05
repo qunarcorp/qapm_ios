@@ -50,6 +50,22 @@ NSURLSessionTaskMetrics 时间信息全，且准确，比较真实的网络请�
 
 hook方式获取网络的请求时长，流量、状态。iOS10以后NSURLSession 的非`[NSURLSession sharedSession]`发出请求用NSURLSessionTaskMetrics方式作为补充。因为它计算出来的流量、网速更真实。而hook计算出来的更贴近开发者，也更贴近用户的体验感受，两者各有用途。
 
+#### 统计范围
+
+整体统计范围：
+
+* 通过NSURLSession、NSURLConnection发出的请求均会统计到。
+* UIWebview、WKWebview的ajax请求统计不到
+* TCP请求统计不到
+
+一些过滤：
+
+* 请求发生在后台，或者请求过程中有退到后台
+* 请求被主动取消
+* 请求url长度等于0的
+* 图片请求(pathExtension 包含 png、jpg、jpeg、gif、webp判定为图片请求)成功且时长小于2秒
+* 请求url是 网络监控日志上传发出的请求
+* 只统计url 以 http:// 或者 https://  开头的
 
 ## 存储上传部分大致实现
 

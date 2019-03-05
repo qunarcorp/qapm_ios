@@ -180,7 +180,7 @@ static NSString *const pitcherURLKey = @"Pitcher-Url";
         }
     }
     
-    // 排除非http请求
+    // 排除非http请求,只上报http、https开头的协议
     if (![_url.absoluteString hasPrefix:@"http"]) {
         return nil;
     }

@@ -393,8 +393,12 @@ static NSLock *globalMonitorWriteLock = nil;
 
 /// 4g/wifi...Unknown(未知网络)，无网：(unconnect)
 + (NSString *)netType {
-    Reachability *curReach = [Reachability reachabilityForInternetConnection];
-    
+    Class reachCla = NSClassFromString(@"Reachability");
+    if (!reachCla) {
+        return nil;
+    }
+    id curReach = [reachCla reachabilityForInternetConnection];
+
     // 获得网络状态
     NetworkStatus netStatus = [curReach currentReachabilityStatus];
     switch (netStatus)
@@ -404,7 +408,7 @@ static NSLock *globalMonitorWriteLock = nil;
             return @"unconnect";
         }
             break;
-            
+
             case ReachableViaWWAN:
         {
             // 判断是否能够取得运营商
@@ -414,23 +418,23 @@ static NSLock *globalMonitorWriteLock = nil;
                 if (telephonyNetworkInfo == nil) {
                     telephonyNetworkInfo = [[CTTelephonyNetworkInfo alloc] init];
                 }
-                
+
                 if ([telephonyNetworkInfo respondsToSelector:@selector(currentRadioAccessTechnology)]) {
                     // 7.0 系统的适配处理。
                     return [NSString stringWithFormat:@"%@",telephonyNetworkInfo.currentRadioAccessTechnology];
                 }
             }
-            
+
             return @"2g/3g";
         }
             break;
-            
+
             case ReachableViaWiFi:
         {
             return @"wifi";
         }
             break;
-            
+
         default:
             break;
     }

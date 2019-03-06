@@ -169,16 +169,8 @@ static NSString *const pitcherURLKey = @"Pitcher-Url";
         return nil;
     }
     
-    long long reqTime = _endTime - _startTime;
+//    long long reqTime = _endTime - _startTime;
 //    long long connTime = _connectTime - _startTime;
-
-    NSString *extension = [[_url pathExtension] lowercaseString];
-    if ([@[@"png", @"jpg", @"gif", @"webp",@"jpeg"] indexOfObject:extension] != NSNotFound) {
-        if (([_errorMsg length] != 0) && ([_httpStatusCode hasPrefix:@"2"] && reqTime < 2000)) {
-            // 对于图片请求，只记录错误的情况和请求时间大于2秒的情况
-            return nil;
-        }
-    }
     
     // 排除非http请求,只上报http、https开头的协议
     if (![_url.absoluteString hasPrefix:@"http"]) {

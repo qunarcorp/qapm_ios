@@ -48,6 +48,7 @@
         NSString *rlt = [defaultDirectory stringByAppendingPathComponent:@"QAPMSystemInfo"];
         _sysMonitorCache = [QCacheStorage cacheStorageWithDir:rlt];
         _sysMonitorCache.maxCacheSize = 50;
+        _sysMonitorCache.maxFileSize = 1000;
     });
 }
 

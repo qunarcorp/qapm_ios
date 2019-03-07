@@ -38,6 +38,8 @@ typedef void (^QGetFileNameCompleteBlock)(NSString *fileName);
 /// 文件夹路径。若用户自定义路径创建文件夹成功则返回用户自定义路径，否则返回默认
 - (NSString *)dirPath;
 @property (nonatomic, assign) NSUInteger maxCacheSize;
+/// 允许存储文件的个数，如果maxFileSize为0则无限制。一个文件大概7KB，1万个文件差不多70MB。如果超过了设定限制，会删掉最早的%5
+@property (nonatomic, assign) NSUInteger maxFileSize;
 /// 生成一个有序的文件名，方便根据文件名排序
 + (NSString *)autoIncrementFileName;
 

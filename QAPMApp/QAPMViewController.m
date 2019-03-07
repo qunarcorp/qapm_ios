@@ -7,7 +7,7 @@
 //
 
 #import "QAPMViewController.h"
-
+#import "QAPMonitor.h"
 @interface QAPMViewController ()
 
 @end
@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self helloQAPM];
+    [QAPMonitor netType];
 }
 
 - (void)helloQAPM {

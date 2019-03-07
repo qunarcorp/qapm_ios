@@ -151,21 +151,24 @@ static NSString *const gStringQCacheDirName = @"/QCacheStorage";
             // 把现有的内存缓存日志存到本地
             [self _saveCacheToFile];
         }
+        if (self.maxFileSize != 0 && self.pendingFiles.count >= self.maxFileSize) {
+            // 删掉最早的5%
+            NSUInteger fileCount = self.pendingFiles.count;
+            NSUInteger removeFileCount = MAX(fileCount * 0.05, 20);
+            NSArray *removeFiles = [self.pendingFiles subarrayWithRange:NSMakeRange(0, removeFileCount)];
+            NSArray *saveFiles = [self.pendingFiles subarrayWithRange:NSMakeRange(removeFileCount, fileCount - removeFileCount)];
+            for (NSString *file in removeFiles) {
+                [self _deleteFile:file];
+            }
+            self.pendingFiles = saveFiles.mutableCopy;
+        }
     });
 }
 
 /// 从缓存或者本地删掉文件
 - (void)deleteFile:(NSString *)fileName {
     dispatch_async(self.squeue, ^{
-        if (fileName == nil || fileName.length == 0) { return ; }
-        // 删除本地文件
-        if ([self.memoryCacher objectForKey:fileName]) {
-            // 如果在内存缓存中，则直接删除
-            [self.memoryCacher removeObjectForKey:fileName];
-        } else {
-            NSFileManager *fileManager = [NSFileManager defaultManager];
-            [fileManager removeItemAtPath:[self saveFilePathWithFileName:fileName] error:nil];
-        }
+        [self _deleteFile:fileName];
     });
 }
 
@@ -199,17 +202,35 @@ static NSString *const gStringQCacheDirName = @"/QCacheStorage";
 
 #pragma mark - 对外提供api对应的内部方法
 
+- (void)_deleteFile:(NSString *)fileName {
+    if (fileName == nil || fileName.length == 0) { return ; }
+    // 删除本地文件
+    if ([self.memoryCacher objectForKey:fileName]) {
+        // 如果在内存缓存中，则直接删除
+        [self.memoryCacher removeObjectForKey:fileName];
+    } else {
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        [fileManager removeItemAtPath:[self saveFilePathWithFileName:fileName] error:nil];
+    }
+}
+
 - (BOOL)_saveCacheToFile {
     // 并非把所有缓存写入一个文件，而依然是单独写入各自的文件。之所以这样做是考虑到如果写入一个文件中，那么当需要其中任意一个时都需要把整个文件全量读出。
     __block BOOL rlt = YES;
+    NSMutableArray *deleteArr = @[].mutableCopy;
     [self.memoryCacher enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSDictionary * _Nonnull logs, BOOL * _Nonnull stop) {
         if ([logs writeToFile:[self saveFilePathWithFileName:key] atomically:YES]) {
-            [self.memoryCacher removeObjectForKey:key];
+            [deleteArr addObject:key];
         } else {
             rlt = NO;
             *stop = YES;
         }
     }];
+    for (NSString *key in deleteArr) {
+        if (key) {
+            [self.memoryCacher removeObjectForKey:key];
+        }
+    }
     return rlt;
 }
 

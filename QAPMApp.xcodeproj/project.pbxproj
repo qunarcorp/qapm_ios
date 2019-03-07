@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		6008153421FEAEDC00C90D84 /* QAPMSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6008153221FEAEDC00C90D84 /* QAPMSystemInfo.h */; };
 		6008153621FEAEDC00C90D84 /* QAPMSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6008153321FEAEDC00C90D84 /* QAPMSystemInfo.m */; };
-		601244EC21CA67B800D0D21F /* QCacheStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 601244EA21CA67B800D0D21F /* QCacheStorage.h */; };
+		601244EC21CA67B800D0D21F /* QCacheStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 601244EA21CA67B800D0D21F /* QCacheStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		601244ED21CA67B800D0D21F /* QCacheStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 601244EB21CA67B800D0D21F /* QCacheStorage.m */; };
 		6026AF2C222921C2009879F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026AF2B222921C2009879F1 /* AppDelegate.m */; };
 		6026AF2F222922DE009879F1 /* QAPMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026AF2E222922DE009879F1 /* QAPMViewController.m */; };
 		6026AF3122292961009879F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6026AF3022292961009879F1 /* README.md */; };
 		6026AF36222931EF009879F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6026AF35222931EF009879F1 /* SystemConfiguration.framework */; };
-		6026AF3922294532009879F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026AF3822294532009879F1 /* Reachability.m */; };
 		60336C5321E3260900704164 /* QAPFPSMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 60336C5121E3260900704164 /* QAPFPSMonitor.h */; };
 		60336C5521E3260900704164 /* QAPFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 60336C5221E3260900704164 /* QAPFPSMonitor.m */; };
 		607F62E021AF8A7E00289A78 /* QAPMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F62DE21AF8A7E00289A78 /* QAPMonitor.m */; };
@@ -65,7 +64,6 @@
 		6026AF2E222922DE009879F1 /* QAPMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAPMViewController.m; sourceTree = "<group>"; };
 		6026AF3022292961009879F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		6026AF35222931EF009879F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6026AF3822294532009879F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		60336C5121E3260900704164 /* QAPFPSMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAPFPSMonitor.h; sourceTree = "<group>"; };
 		60336C5221E3260900704164 /* QAPFPSMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAPFPSMonitor.m; sourceTree = "<group>"; };
 		607F62DE21AF8A7E00289A78 /* QAPMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAPMonitor.m; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				607F62DF21AF8A7E00289A78 /* QAPMonitor.h */,
 				607F62DE21AF8A7E00289A78 /* QAPMonitor.m */,
 				609404C221A581D4005ADDF6 /* Reachability.h */,
-				6026AF3822294532009879F1 /* Reachability.m */,
 				6008153121FEAEA900C90D84 /* SystemInfo */,
 				60336C5021E3244400704164 /* FPSMonitor */,
 				6094049E21A54476005ADDF6 /* URLConnection */,
@@ -346,7 +343,6 @@
 				6008153621FEAEDC00C90D84 /* QAPMSystemInfo.m in Sources */,
 				609404B421A54476005ADDF6 /* QAPMURLConnectionDelegateAgent.m in Sources */,
 				609404B721A54476005ADDF6 /* QAPMNetworkEntry.m in Sources */,
-				6026AF3922294532009879F1 /* Reachability.m in Sources */,
 				609404B221A54476005ADDF6 /* QAPMNSURLSessionTaskAgent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

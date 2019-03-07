@@ -22,7 +22,9 @@ uid 设备号，唯一区分一台设备，比如idfa
                  uid:(nullable NSString *)uid;
 ```
 
+* 检测网络状态`Reachability.m`
 
+目前大多工程一般都包含了`Reachability.m`文件，为了避免链接错误，没有将`Reachability.m`放入本工程。如果你的工程没有包含`Reachability.m`，请将本工程目录的`QAPM/Monitor/Reachability.m` 加入工程中参与编译；如果已经包含请无视这里
 
 * 其它一些设置
 

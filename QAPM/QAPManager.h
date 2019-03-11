@@ -56,6 +56,8 @@
 + (nullable CLLocation *)location;
 /// 获取当前显示界面
 + (nullable NSString *)appearVC;
+/// 获取当前显示界面类名
++ (nullable NSString *)topVCClassName;
 
 /****************************************
  获取当前的日志：

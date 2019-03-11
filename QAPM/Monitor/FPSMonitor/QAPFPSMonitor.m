@@ -39,7 +39,7 @@
 - (void)appDidBecomeActive {
     if (_isMonitor == NO) {
         _isMonitor = YES;
-        _lastTopVC = [QAPManager appearVC];
+        _lastTopVC = [QAPManager topVCClassName];
     }
 }
 
@@ -55,7 +55,7 @@
         if (!_link) {
             [self clearDropedInfo];
             _isMonitor = YES;
-            _lastTopVC = [QAPManager appearVC];
+            _lastTopVC = @"";
             _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
             [_link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         }
@@ -89,7 +89,10 @@
         _dropInfo.lastTime = link.timestamp;
         return;
     }
-    NSString *curTopVC = [QAPManager appearVC];
+    NSString *curTopVC = [QAPManager topVCClassName];
+    if (curTopVC.length == 0) {
+        return;
+    }
     if (_lastTopVC.length == 0) {
         _lastTopVC = curTopVC;
         return;

@@ -95,6 +95,19 @@
     return nil;
 }
 
++ (nullable NSString *)topVCClassName {
+    NSString *vcName = nil;
+    Class cla = NSClassFromString(@"VCController");
+    SEL sel = NSSelectorFromString(@"getTopVC");
+    if ([cla respondsToSelector:sel]) {
+        id vc = [cla performSelector:sel];
+        if (vc) {
+            vcName = NSStringFromClass([vc class]);
+        }
+    }
+    return vcName;
+}
+
 //+ (NSString *)topVCName {
 //    UIViewController *result = nil;
 //

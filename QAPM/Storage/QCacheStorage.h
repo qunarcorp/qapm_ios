@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QCacheStorage : UIView
+@interface QCacheStorage : NSObject
 
 typedef void (^QGetFileDataCompleteBlock)(NSDictionary *data);
 
